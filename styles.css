@@ -17,7 +17,6 @@ h3{
 }
 p{
     line-height: 1.5em;
-    float:right;
 }
 img{
     float: left;
@@ -36,4 +35,53 @@ a:hover{
 }
 a:active{
     color: blueviolet;
+}
+#sidebar{
+    background-color: black;
+    width:225px;
+    float: right;
+    border: 2px sold white;
+    margin: 15px;
+    margin-top: 80px;
+    line-height: 2.25em;
+}
+#sidebar h3{
+    padding: 5px;
+    width: 100px;
+    background:none;
+}
+@media (max-width:1200px){
+    #container{
+        background-color: aqua;
+    }
+}
+@media (max-width: 907px){
+    #container{
+        width:100%;
+    }
+    #container, p{
+        margin:0;
+        padding:0;
+        border: none;
+    }
+    body,h1,h2,h3,p,div{
+        background-color:red;
+        border: none;
+    }
+}
+body:{
+    padding:20px;
+}
+@media (){
+    #sidebar{
+        display:none;
+    }
+    img{
+        float:none;
+        border:none;
+        width: 100%;
+    }
+    h3{
+        margin: 10px;
+    }
 }
