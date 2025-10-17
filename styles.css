@@ -1,1 +1,39 @@
+body{
+    background-color:aquamarine;
+    font-family:serif;
+}
+h1{
+    background-color: blanchedalmond;
+    border-color: black;
+    border-width: 20px;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 0 auto;
+    width:120%;
+    font-family:cursive;
+}
+h3{
 
+}
+p{
+    line-height: 1.5em;
+    float:right;
+}
+img{
+    float: left;
+    width: 300px;
+    border: white solid 3px;
+    border-radius: 15px;
+}
+a:link{
+    color:blue;
+}
+a:visited{
+    color:cadetblue;
+}
+a:hover{
+    text-decoration: underline;
+}
+a:active{
+    color: blueviolet;
+}
