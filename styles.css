@@ -1,31 +1,57 @@
 body{
-    background:lightblue;
-    color:azure;
-    font-family: "arial";
-    padding: 0;
+    /* fallback color */
+    background-color: #0b6623;
+
+    /* background image (adjust path as needed) */
+    background-image: url("images/torrey-pines-trail-1.avif");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;        /* cover the whole viewport */
+    background-attachment: fixed;  /* optional: fixed/parallax effect */
+
+    color: azure;
+    font-family: Arial, sans-serif;
+    padding: 20px;
     margin: 0;
 }
 #container{
-    background:salmon;
-    padding:30px;
-    width: 1100px;
+    /* semi-transparent background (adjust alpha 0.0 - 1.0) */
+    background-color: rgba(144,238,144,0.65); /* lightgreen at 65% opacity */
+
+    padding: 30px;
+    max-width: 1100px;
+    width: 95%;
     margin: 0 auto;
-    border-left: 5px solid cyan;
-    border-right: 5px solid cyan;
+
+    /* keep borders and rounded corners */
+    border-left: 5px solid rgba(0,128,0,0.6);
+    border-right: 5px solid rgba(0,128,0,0.6);
+    border-top: 5px solid rgba(0,128,0,0.6);
+    border-bottom: 5px solid rgba(0,128,0,0.6);
+    border-radius: 12px;
+
+    /* optional: soft blur of what's behind for a "glass" look */
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+
+    /* prevent the background from bleeding into the border */
+    background-clip: padding-box;
+
+    box-sizing: border-box;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.12);
 }
 #sidebar{
-    background-color:black;
+    background:rgb(48, 210, 48);
     border:3px solid white;
     padding: 20px;
     width: 20%;
-    background:none;
     float: right;
     margin-left: 30px;
     border-radius: 30px;
 }
 h1{
     background: blanchedalmond;
-    color:darkblue;
+    color:black;
     border-color: black;
     border-width: 20px;
     border-radius: 30px;
@@ -39,14 +65,15 @@ h1{
 }
 h2{
     text-align: center;
+    color:black;
 }
 h3{
     width:100px;
-    border-left: 30px double blue;
+    border-left: 30px double rgb(218, 98, 98);
     padding:6px;
-    color:white;
+    color:black;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-weight: bold;
+    font-weight: normal;
     margin-left: 30px;
     border-radius: 12px;
 }
@@ -80,6 +107,10 @@ img{
 .underline{
     text-decoration: underline;
 }
+hr{
+    background-color:black;
+    height: 3px;
+}
 a:link{
     color:blue;
     font-weight: bold;
@@ -102,12 +133,12 @@ ul{
     font-size: 1em;
 }
 #sidebar h3{
-    border-color:red;
+    border-color:rgb(24, 129, 85);
     font-size:1.2em;
 }
 @media (max-width:1200px){
     #container{
-        background: aqua;
+        background: rgb(20, 237, 237);
         width:875px;
     }
 }
@@ -121,7 +152,7 @@ ul{
         border: none;
     }
     body,h1,h2,h3,p,div{
-        background-color:red;
+        background-color:rgb(236, 171, 171);
         border: none;
     }
 }
