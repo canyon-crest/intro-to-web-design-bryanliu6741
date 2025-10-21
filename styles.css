@@ -3,7 +3,7 @@ body{
     background-color: #0b6623;
 
     /* background image (adjust path as needed) */
-    background-image: url("images/torrey-pines-trail-1.avif");
+    background-image: url("images/Torrey-Pines_2018_Torrey-Pines-Cliffs--Courtesy-Lisa-Field-SanDiego.webp");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;        /* cover the whole viewport */
@@ -60,15 +60,14 @@ h1{
     margin: 0 auto;
     width:80%;
     font-family:"cursive";
-    font-size: 3en;
-    border: 6 px groove black;
+    font-size: 3em;
+    border: 6px groove black;
 }
 h2{
     text-align: center;
     color:black;
 }
 h3{
-    width:100px;
     border-left: 30px double rgb(218, 98, 98);
     padding:6px;
     color:black;
@@ -138,30 +137,43 @@ ul{
 }
 @media (max-width:1200px){
     #container{
-        background: rgb(20, 237, 237);
-        width:875px;
+        background-color: rgba(144, 221, 238, 0.65); /* lightgreen at 65% opacity */
+        border-left: 5px solid rgba(34, 252, 244, 0.899);
+        border-right: 5px solid rgba(34,252,244,0.89);
+        border-top: 5px solid rgba(34,252,244,0.89);
+        border-bottom: 5px solid rgba(34,252,244,0.89);
+        border-radius: 12px;
+        padding: 30px;
+        max-width: 1100px;
+        width: 95%;
+        margin: 0 auto;
     }
 }
 @media (max-width: 992px){
     #container{
-        width:100%;
+        width: 100%;
+        max-width: 980px;
+        margin: 18px auto; /* keep centered */
+        padding: 16px;
+        border: none;
     }
     #container, p{
         margin:0;
         padding:0;
         border: none;
     }
-    body,h1,h2,h3,p,div{
-        background-color:rgb(236, 171, 171);
+    h1,h2,h3,p,div{
         border: none;
     }
-}
-body:{
-    padding:20px;
 }
 @media (max-width: 768px){
     #container{
         width: 85%;
+        max-width: 720px;
+        margin: 16px auto; /* keep centered on small screens */
+        padding: 14px;
+        backdrop-filter: blur(6px);
+        -webkit-backdrop-filter: blur(6px);
     }
     #sidebar{
         display:none;
@@ -169,9 +181,10 @@ body:{
     img{
         float:none;
         border:none;
-        width: 100%;
+        width: 75%;
     }
     h3{
         margin: 10px;
+        text-decoration: none;
     }
 }
